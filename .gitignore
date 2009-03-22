@@ -1,0 +1,8 @@
+*.csproj.user
+*.resharper.user
+*.suo
+*.cache
+ 
+_ReSharper*
+
+build

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "biblioteca.web", "biblioteca.web\biblioteca.web.csproj", "{BE2D2378-AEFF-462B-9230-D34BC2E92E50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "biblioteca", "biblioteca\biblioteca.csproj", "{F4F122F7-EFCB-43E0-A8FB-C7C48BA2F620}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE2D2378-AEFF-462B-9230-D34BC2E92E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2D2378-AEFF-462B-9230-D34BC2E92E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2D2378-AEFF-462B-9230-D34BC2E92E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2D2378-AEFF-462B-9230-D34BC2E92E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F122F7-EFCB-43E0-A8FB-C7C48BA2F620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F122F7-EFCB-43E0-A8FB-C7C48BA2F620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F122F7-EFCB-43E0-A8FB-C7C48BA2F620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F122F7-EFCB-43E0-A8FB-C7C48BA2F620}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
