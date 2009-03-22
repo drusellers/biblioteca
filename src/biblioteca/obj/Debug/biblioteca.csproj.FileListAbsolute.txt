@@ -1,9 +1,0 @@
-E:\Development\biblioteca\src\biblioteca\bin\Debug\biblioteca.dll
-E:\Development\biblioteca\src\biblioteca\bin\Debug\biblioteca.pdb
-E:\Development\biblioteca\src\biblioteca\bin\Debug\FubuMVC.Core.dll
-E:\Development\biblioteca\src\biblioteca\bin\Debug\FubuMVC.Core.pdb
-E:\Development\biblioteca\src\biblioteca\obj\Debug\ResolveAssemblyReference.cache
-E:\Development\biblioteca\src\biblioteca\obj\Debug\biblioteca.dll
-E:\Development\biblioteca\src\biblioteca\obj\Debug\biblioteca.pdb
-E:\Development\biblioteca\src\build\debug\biblioteca.dll
-E:\Development\biblioteca\src\build\debug\biblioteca.pdb

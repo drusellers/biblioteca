@@ -6,3 +6,6 @@
 _ReSharper*
 
 build
+
+src/*/bin
+src/*/obj
