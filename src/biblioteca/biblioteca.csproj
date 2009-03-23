@@ -47,6 +47,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="domain\SoftwarePackage.cs" />
@@ -56,10 +57,18 @@
     <Compile Include="web\html\HtmlExtensions.cs" />
     <Compile Include="web\IBibliotecaPage.cs" />
     <Compile Include="web\ViewModel.cs" />
+    <Compile Include="web\web_forms\BibliotecaMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\web_forms\BibliotecaPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="web\web_forms\BibliotecaUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="config\" />
-    <Folder Include="web\web_forms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
