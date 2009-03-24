@@ -79,9 +79,17 @@
     <Compile Include="WebRegistry.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\styles\default.css" />
     <Content Include="views\package\Index.aspx" />
     <Content Include="views\shared\PackageInfo.ascx" />
     <Content Include="views\shared\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages\baretail.package" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content\images\" />
+    <Folder Include="content\scripts\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />

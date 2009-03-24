@@ -1,3 +1,5 @@
 ﻿<%@ Control Language="C#" Inherits="biblioteca.web.views.PackageInfo" %>
-<h2><%= Model.Name %></h2>
-<div><%= Model.Description %></div>
+<div class="package_item">
+    <h2><%= Model.Name %></h2>
+    <p><%= Model.Description %></p>
+</div>

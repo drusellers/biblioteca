@@ -1,6 +1,7 @@
 namespace biblioteca.web.controllers
 {
     using System;
+    using System.Linq;
     using System.Collections.Generic;
     using display_models;
     using domain;
@@ -9,15 +10,11 @@ namespace biblioteca.web.controllers
     {
         public PackageViewModel Index(PackageSetupViewModel inModel)
         {
-            var list = new List<SoftwarePackageDisplay>();
-
             var model = new PackageViewModel();
 
-            list.Add(new SoftwarePackageDisplay(new SoftwarePackage(){Name = "baretail", Description = "tail tool"}));
-            list.Add(new SoftwarePackageDisplay(new SoftwarePackage(){Name = "baregrep", Description = "grep tool"}));
-            list.Add(new SoftwarePackageDisplay(new SoftwarePackage(){Name = "notepad++", Description = "notepad replacement"}));
+            var packages = Repository.List().Select((package, result)=> new SoftwarePackageDisplay(package));
 
-            model.Packages = list;
+            model.Packages = packages;
 
             return model;
         }
@@ -31,6 +28,6 @@ namespace biblioteca.web.controllers
     [Serializable]
     public class PackageViewModel : ViewModel
     {
-        public IList<SoftwarePackageDisplay> Packages { get; set; }
+        public IEnumerable<SoftwarePackageDisplay> Packages { get; set; }
     }
 }

@@ -5,15 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="/content/styles/default.css" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
 <body>
+    <div style="width:100%;background:#000;color:#fff;">
+        biblioteca
+    </div>
     <form id="form1" runat="server">
     <div>
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
     </div>
     </form>
 </body>
