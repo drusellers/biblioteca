@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages\baretail.package" />
+    <None Include="packages\baregrep.package" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\images\" />
