@@ -9,13 +9,15 @@
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
 <body>
-    <form runat="server">
 	<div id="content">
 		<div class="header">
 			<div class="searchform">	
-				<form method="post" class="search" action="#" />
-					<p><input name="search_query" class="text" type="text" />
-  					<input name="search" class="searchbutton" value="Search" type="submit" /></p>
+				<%= this.FormFor<SearchController>(l=>l.Index(null)).Class("search") %>
+					<p>
+					    <%= this.TextBoxFor(m => m.Terms).ElementId("search_query").Class("text") %>
+  					    <input name="search" class="searchbutton" value="Search" type="submit" />
+  					</p>
+  					</form>
 			</div>
 		
 			<h1><a href="#">biblioteca</a></h1>
@@ -36,6 +38,5 @@
 			<p>Design: Luka Cvrk - <a href="http://www.solucija.com/" title="What's your solution?">Solucija</a> | Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> and <a href="http://validator.w3.org/check?uri=referer">XHTML</a></p>
 		</div>
     </div>
-    </form>
 </body>
 </html>
