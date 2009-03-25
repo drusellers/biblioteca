@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="content\styles\default.css" />
+    <Content Include="content\styles\style.css" />
     <Content Include="views\package\Index.aspx" />
     <Content Include="views\shared\PackageInfo.ascx" />
     <Content Include="views\shared\Site.Master" />
