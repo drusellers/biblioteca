@@ -5,17 +5,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="/content/styles/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/content/styles/style.css" type="text/css" media="screen" />
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
 <body>
-    <div style="width:100%;background:#000;color:#fff;">
-        biblioteca
+	<div id="content">
+		<div class="header">
+			<div class="searchform">	
+				<%= this.FormFor<SearchController>(l=>l.Index(null)).Class("search") %>
+					<p>
+					    <%= this.TextBoxFor(m => m.Terms).ElementId("search_query").Class("text") %>
+  					    <input name="search" class="searchbutton" value="Search" type="submit" />
+  					</p>
+  					</form>
+			</div>
+		
+			<h1><a href="#">biblioteca</a></h1>
+		</div>
+
+		<div class="right">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+		</div>
+		
+		<div class="left">
+		    <asp:ContentPlaceHolder ID="MinorContent" runat="server">
+			    <h2>About <a href="#">biblioteca</a></h2>
+			    <p>A simple website to track an application use in a company</p>
+			</asp:ContentPlaceHolder>
+		</div>
+		
+		<div class="footer">
+			<p>Design: Luka Cvrk - <a href="http://www.solucija.com/" title="What's your solution?">Solucija</a> | Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> and <a href="http://validator.w3.org/check?uri=referer">XHTML</a></p>
+		</div>
     </div>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-    </div>
-    </form>
 </body>
 </html>

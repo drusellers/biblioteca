@@ -80,12 +80,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="content\styles\default.css" />
+    <Content Include="content\styles\style.css" />
     <Content Include="views\package\Index.aspx" />
+    <Content Include="views\search\Index.aspx" />
+    <Content Include="views\search\Reindex.aspx" />
     <Content Include="views\shared\PackageInfo.ascx" />
     <Content Include="views\shared\Site.Master" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages\baretail.package" />
+    <None Include="packages\baregrep.package" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\images\" />

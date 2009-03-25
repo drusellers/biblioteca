@@ -9,6 +9,7 @@ namespace biblioteca.web.views
 
     //pages
     public class HomeIndexView : BibliotecaPage<PackageViewModel> { }
+    public class SearchView : BibliotecaPage<ReindexViewModel> { }
 
     //user controllers
     public class PackageInfo : BibliotecaUserControl<SoftwarePackageDisplay> { }
