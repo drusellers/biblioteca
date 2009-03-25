@@ -39,6 +39,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\fubumvc\FubuMVC.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Lucene.Net, Version=2.0.0.4, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Lucene.Net\Lucene.Net.dll</HintPath>
+    </Reference>
     <Reference Include="StructureMap, Version=2.5.3.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\StructureMap\StructureMap.dll</HintPath>
@@ -58,6 +62,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="web\controllers\PackageController.cs" />
     <Compile Include="web\controllers\SearchController.cs" />
+    <Compile Include="web\display_models\SearchResultDisplay.cs" />
     <Compile Include="web\display_models\SoftwarePackageDisplay.cs" />
     <Compile Include="web\html\HtmlExtensions.cs" />
     <Compile Include="web\IBibliotecaPage.cs" />
