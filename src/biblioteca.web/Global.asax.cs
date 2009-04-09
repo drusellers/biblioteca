@@ -7,6 +7,7 @@ using System.Web.SessionState;
 
 namespace biblioteca.web
 {
+    using System.Reflection;
     using FubuMVC.Container.StructureMap.Config;
     using FubuMVC.Core.Behaviors;
 
@@ -16,17 +17,19 @@ namespace biblioteca.web
         protected void Application_Start(object sender, EventArgs e)
         {
             ControllerConfig.Configure = x =>
-            {
-                x.ByDefault.EveryControllerAction(d => d
-                    .Will<execute_the_result>());
+                                         {
+                                             x.ByDefault.EveryControllerAction(d => d
+                                                                                        .Will<execute_the_result>());
 
-                x.AddControllersFromAssembly.ContainingType<ViewModel>(c =>
-                {
-                    c.Where(t => t.Namespace.EndsWith("web.controllers")
-                                 && t.Name.EndsWith("Controller"));
-
-                    c.MapActionsWhere((m, i, o) => true);
-                });
+                                             const BindingFlags publicDeclaredOnly = BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
+                                             x.AddControllerActions(a =>
+                                                 a.UsingTypesInTheSameAssemblyAs<ViewModel>(types =>
+                                                     from type in types
+                                                     where type.Namespace.EndsWith("web.controllers") &&
+                                                           type.Name.EndsWith("Controller")
+                                                     from method in type.GetMethods(publicDeclaredOnly)
+                                                     select method
+                                             ));
             };
 
             Bootstrapper.Bootstrap();
