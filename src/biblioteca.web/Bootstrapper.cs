@@ -20,6 +20,7 @@ namespace biblioteca.web
                 x.AddRegistry(new FrameworkServicesRegistry());
                 x.AddRegistry(new WebRegistry());
                 x.AddRegistry(new ControllerConfig());
+                x.AddRegistry(new BibliotecaRegistry());
             });
 
             ObjectFactory.AssertConfigurationIsValid();

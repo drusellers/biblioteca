@@ -11,10 +11,10 @@
 <body>
 	<div id="content">
 		<div class="header">
-			<div class="searchform">	
-				<%= this.FormFor<SearchController>(l=>l.Index(null)).Class("search") %>
+			<div class="searchform">
+			    <form action="/Search" class="search">
 					<p>
-					    <%= this.TextBoxFor(m => m.Terms).ElementId("search_query").Class("text") %>
+					    <input name="terms" id="search_query" class="text" />
   					    <input name="search" class="searchbutton" value="Search" type="submit" />
   					</p>
   					</form>

@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="domain\Repository.cs" />
+    <Compile Include="domain\searching\lucene\LuceneSearch.cs" />
+    <Compile Include="domain\searching\Search.cs" />
     <Compile Include="domain\SoftwarePackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="web\controllers\PackageController.cs" />
